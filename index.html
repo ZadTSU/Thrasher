@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thrasher</title>
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
 
     <!-- Fuentes -->
@@ -18,57 +21,51 @@
   <body class="indexbody">
     <!-- cabecera -->
     <header>
-      <a href="index.html">
-        <img
-          src="https://seeklogo.com/images/T/Thrasher_fogo-logo-3F706AAA8D-seeklogo.com.png"
-          alt="logothraser"
-          class="logo"
-        />
-      <!-- NAV -->
-      <nav>
-        <ul>
-          <li class="list-item">
-            <a href="index.html">Inicio</a>
-          </li>
-          <li class="list-item">
-            <a href="../pages/tienda.html">Tienda</a>
-          </li>
-          <li class="list-item">
-            <a href="../pages/sobrenosotros.html">Sobre Nosotros</a>
-          </li>
-          <li class="list-item">
-            <a href="../pages/ayuda.html">Ayuda</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <img src="https://seeklogo.com/images/T/Thrasher_fogo-logo-3F706AAA8D-seeklogo.com.png" alt="logo" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/pages/sobrenosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
       </nav>
-      <a href="carrito.html">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png"
-          alt=""
-          class="carrito"
-        />
-      </a>
     </header>
 
     <!-- principal -->
     <main class="index" >
-      <h1>Bienvenido</h1>
-      <section>
-        <h2>Descubre la moda de este 2024</h2>
-        <a class="botonmain" href="pages/tienda.html">Descubrir</a>
-      </section>
+      <div class="welcome-message">
+        <h1>Bienvenido</h1>
+        <p>Descubre la moda de este 2024.</p>
+        <a href="/pages/tienda.html" class="btn-discover">Descubrir</a>
+      </div>
     </main>
 
     <!-- pie -->
     <footer>
-      <a href="">
-        <img
-          src="https://seeklogo.com/images/T/Thrasher_fogo-logo-3F706AAA8D-seeklogo.com.png"
-          alt=""
-          class="logofooter"
-        />
-      </a>
-      <h4>©Copyright Thrasher Collection 2023. All rights reserved.</h4>
+      <p>&copy; 2024 Thrasher. Todos los derechos reservados. | Desarrollado por Zadquiel</p>
     </footer>
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
